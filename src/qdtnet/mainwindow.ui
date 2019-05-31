@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Brandon Aubie</author>
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>940</width>
+    <height>719</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Qt:dtnet</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="qdtnet.qrc">
+    <normaloff>:/newPrefix/resources/gt_dendrites.jpg</normaloff>:/newPrefix/resources/gt_dendrites.jpg</iconset>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="documentMode">
+   <bool>false</bool>
+  </property>
+  <property name="tabShape">
+   <enum>QTabWidget::Triangular</enum>
+  </property>
+  <property name="unifiedTitleAndToolBarOnMac">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>940</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionOpen_Network"/>
+    <addaction name="actionOpen_Trial"/>
+    <addaction name="separator"/>
+    <addaction name="actionOpen_Workspace"/>
+    <addaction name="actionSave_Workspace"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuView">
+    <property name="title">
+     <string>View</string>
+    </property>
+    <addaction name="actionProperties_Window"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuView"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionOpen_Workspace"/>
+   <addaction name="actionSave_Workspace"/>
+    <addaction name="separator"/>
+   <addaction name="actionOpen_Network"/>
+   <addaction name="actionOpen_Trial"/>
+    <addaction name="separator"/>
+   <addaction name="actionRun_Simulation"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <widget class="QDockWidget" name="dockProperties">
+   <property name="allowedAreas">
+    <set>Qt::LeftDockWidgetArea|Qt::RightDockWidgetArea</set>
+   </property>
+   <attribute name="dockWidgetArea">
+    <number>1</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents"/>
+  </widget>
+  <widget class="QDockWidget" name="dockResults">
+   <attribute name="dockWidgetArea">
+    <number>2</number>
+   </attribute>
+   <widget class="QWidget" name="dockWidgetContents_2"/>
+  </widget>
+  <action name="actionOpen_Network">
+   <property name="icon">
+    <iconset resource="qdtnet.qrc">
+     <normaloff>:/newPrefix/resources/gt_dendrites.jpg</normaloff>:/newPrefix/resources/gt_dendrites.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Open Network</string>
+   </property>
+  </action>
+  <action name="actionOpen_Trial">
+   <property name="icon">
+    <iconset resource="qdtnet.qrc">
+     <normaloff>:/newPrefix/resources/signal-Vista-icon.jpg</normaloff>:/newPrefix/resources/signal-Vista-icon.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Open Trial</string>
+   </property>
+  </action>
+  <action name="actionOpen_Workspace">
+   <property name="icon">
+
+   </property>
+   <property name="text">
+    <string>Open Workspace</string>
+   </property>
+  </action>
+  <action name="actionSave_Workspace">
+   <property name="text">
+    <string>Save Workspace</string>
+   </property>
+  </action>
+  <action name="actionRun_Simulation">
+   <property name="icon">
+    <iconset resource="qdtnet.qrc">
+     <normaloff>:/newPrefix/resources/run-copy-icon.jpg</normaloff>:/newPrefix/resources/run-copy-icon.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Run Simulation</string>
+   </property>
+   <property name="toolTip">
+    <string>Run Simulation</string>
+   </property>
+  </action>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionProperties_Window">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Properties Window</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="qdtnet.qrc"/>
+ </resources>
+ <connections/>
+</ui>
